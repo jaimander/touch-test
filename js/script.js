@@ -1,11 +1,14 @@
 const touchArea = document.getElementById("touch-area");
 const counter = document.getElementById("counter");
+const imagen = document.getElementById("contenedor-img");
 
 function updateCounter(event) {
   let cantidad =  event.touches.length;
 
+
   counter.textContent = cantidad;
 
+  /*
   if(cantidad == 0){
     touchArea.style.backgroundColor = "rgb(255, 174, 0)";
   }
@@ -17,6 +20,14 @@ function updateCounter(event) {
   }
    if(cantidad == 3){
     touchArea.style.backgroundColor = "rgb(242, 0, 255)";
+  }
+    */
+
+  if(cantidad > 0){
+  imagen.style.visibility = "visible";
+  }
+  else{
+    imagen.style.visibility = "hidden";
   }
 
 }

@@ -4,7 +4,7 @@ const counter = document.getElementById("counter");
 function updateCounter(event) {
   counter.textContent = event.touches.length;
 
-  if(counter == 0){
+  if(event.touches.length == 0){
     touchArea.style.backgroundColor = "rgb(255, 255, 255)";
   }
   else{

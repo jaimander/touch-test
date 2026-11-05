@@ -7,8 +7,14 @@ function updateCounter(event) {
   if(event.touches.length == 0){
     touchArea.style.backgroundColor = "rgb(255, 255, 255)";
   }
-  else{
-    touchArea.style.backgroundColor = "rgb(255, 0, 0)";
+  if(event.touches.length == 1){
+    touchArea.style.backgroundColor = "rgb(0, 255, 145)";
+  }
+  if(event.touches.length == 2){
+    touchArea.style.backgroundColor = "rgb(0, 38, 255)";
+  }
+   if(event.touches.length == 3){
+    touchArea.style.backgroundColor = "rgb(242, 0, 255)";
   }
 
 }
